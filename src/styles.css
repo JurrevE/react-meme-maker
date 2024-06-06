@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  background-color: lightblue;
+}
+:root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent {
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(137, 57, 194);
+  background: linear-gradient(
+    159deg,
+    rgba(137, 57, 194, 1) 35%,
+    rgba(142, 29, 124, 1) 100%
+  );
+  color: white;
+  height: 20vh;
+  width: 80%;
+}
+
+.trollface {
+  height: 40px;
+  width: 40px;
+}
+
+main {
+  height: 70vh;
+  width: 80%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 4rem;
+  padding-bottom: 2rem;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+}
