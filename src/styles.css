@@ -1,62 +1,48 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
-  background-color: lightblue;
-}
-:root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainContent {
-  height: 85vh;
-  width: 85vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: rgb(137, 57, 194);
-  background: linear-gradient(
-    159deg,
-    rgba(137, 57, 194, 1) 35%,
-    rgba(142, 29, 124, 1) 100%
-  );
-  color: white;
-  height: 20vh;
-  width: 80%;
-}
-
-.trollface {
-  height: 40px;
-  width: 40px;
 }
 
 main {
-  height: 70vh;
-  width: 80%;
-  flex-direction: column;
+  padding: 36px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  background-color: white;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
+  margin-bottom: 17px;
 }
 
 .form--input {
@@ -76,15 +62,37 @@ main {
   cursor: pointer;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 4rem;
-  padding-bottom: 2rem;
+.meme {
+  position: relative;
 }
 
-.image {
-  height: 400px;
-  width: 400px;
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
